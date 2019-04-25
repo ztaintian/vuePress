@@ -1,4 +1,7 @@
 module.exports = {
+  head: [
+    ['link', { rel: 'icon', href: '/logo.jpg' }]
+  ],
   title: '小猪学习',
   description: '每天一点',
   lastUpdated: 'Last Updated',
@@ -13,32 +16,33 @@ module.exports = {
   themeConfig: {
     search: true,
     searchMaxSuggestions: 10,
-    sidebar: {
-      '/': [
-        '',
-      ],
+    displayAllHeaders: true,
+    sidebar:{
       '/tcp/': [
         ''
       ],
       '/javascript/': [
         '',
-        'reg'
+        'one'
       ]
     },
     nav: [
       { text: 'java', link: '/foo/' },
       { text: 'springboot', link: '/springboot/' },
-      { text: 'javascript', link: 'javascript' },
+      {
+        text: 'javascript',
+        items: [{
+          text: 'javascript', link: '/javascript/'
+        }]
+      },
       { text: 'css', link: 'css' },
       { text: 'html', link: 'html' },
       { text: 'GitHub', link: 'GitHub' },
       {
         text: '其他',
-        items: [
-          { text: 'TCP', link: '/tcp/' },
-          { text: 'English', link: '/language/english' }
-        ]
-
+        items: [{
+          text: 'TCP', link: '/tcp/'
+        }]
       },
       {
         text: 'Languages',
