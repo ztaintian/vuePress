@@ -1,6 +1,11 @@
 module.exports = {
   themeConfig: {
+    search: true,
+    searchMaxSuggestions: 10,
     sidebar: {
+      '/tcp/': [
+        ''
+      ],
       '/foo/': [
         '',     /* /foo/ */
         'one',  /* /foo/one.html */
@@ -28,6 +33,14 @@ module.exports = {
       { text: 'html', link: 'html' },
       { text: 'GitHub', link: 'GitHub' },
       {
+        text: '其他',
+        items: [
+          { text: 'TCP', link: '/tcp/' },
+          { text: 'English', link: '/language/english' }
+        ]
+
+      },
+      {
         text: 'Languages',
         items: [
           { text: 'Chinese', link: '/language/chinese' },
@@ -37,7 +50,7 @@ module.exports = {
     ]
   },
   title: '小猪学习',
-  description : '每天一点',
+  description: '每天一点',
   lastUpdated: 'Last Updated',
   base: '/bar/',
   configureWebpack: {

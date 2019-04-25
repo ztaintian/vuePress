@@ -8,5 +8,5 @@ features:
   details: 
 - title: javascript
   details: 
-footer: MIT Licensed | Copyright © 2019-present TIAN TIAN
+footer: MIT Licensed | Copyright © 2019 TIAN TIAN
 ---
