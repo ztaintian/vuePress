@@ -1,28 +1,28 @@
 module.exports = {
+  title: '小猪学习',
+  description: '每天一点',
+  lastUpdated: 'Last Updated',
+  base: '/bar/',
+  // configureWebpack: {
+  //   resolve: {
+  //     alias: {
+  //       '@alias': 'path/to/some/dir'
+  //     }
+  //   }
+  // },
   themeConfig: {
     search: true,
     searchMaxSuggestions: 10,
     sidebar: {
+      '/': [
+        '',
+      ],
       '/tcp/': [
         ''
       ],
-      '/foo/': [
-        '',     /* /foo/ */
-        'one',  /* /foo/one.html */
-        'two'   /* /foo/two.html */
-      ],
-
-      '/bar/': [
-        '',      /* /bar/ */
-        'three', /* /bar/three.html */
-        'four'   /* /bar/four.html */
-      ],
-
-      // fallback
-      '/': [
-        '',        /* / */
-        'contact', /* /contact.html */
-        'about'    /* /about.html */
+      '/javascript/': [
+        '',
+        'reg'
       ]
     },
     nav: [
@@ -48,16 +48,5 @@ module.exports = {
         ]
       }
     ]
-  },
-  title: '小猪学习',
-  description: '每天一点',
-  lastUpdated: 'Last Updated',
-  base: '/bar/',
-  configureWebpack: {
-    resolve: {
-      alias: {
-        '@alias': 'path/to/some/dir'
-      }
-    }
   }
 }
